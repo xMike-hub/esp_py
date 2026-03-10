@@ -19,6 +19,8 @@ Ho diviso gli appunti per argomenti. Ti consiglio di leggerli e provarli in ques
 6. **`dizionario.py`** - La rubrica telefonica: salvare i dati usando il sistema "Chiave : Valore".
 7. **`if_controllo_di_flusso.py`** - Prendere decisioni con il codice usando `if`, `elif` ed `else`.
 8. **`ciclo.py`** - Come ripetere le azioni all'infinito o scorrere gli elementi usando `for` e `while`.
+9. **`funzioni.py`** - I "mini-programmi" riutilizzabili: come creare le tue ricette con `def`, usare i parametri e capire `return`.
+10. **`importazioni_e_main.py`** e **`usa_importazioni.py`** - Come dividere un progetto grande in più file, usare i moduli (come `math` e `random`) e il trucco di `if __name__ == "__main__":`.
 
 ## 🚀 Come usare questi appunti
 
