@@ -12,29 +12,33 @@
 # ============================================================
 print("=== 1. IMPORTIAMO LA NOSTRA CASSETTA DEGLI ATTREZZI ===")
 
-# Immagina che il file di prima si chiami 'importazioni_e_main.py'
-# e si trovi nella STESSA CARTELLA di questo file.
-# Lo importiamo per rubargli le funzioni che avevamo creato!
+# IMPORTANTE: Abbiamo rinominato il file in '02_moduli_teoria.py'
+# In Python, per importare un file che inizia con un numero o contiene trattini,
+# la sintassi standard 'import 02_moduli_teoria' potrebbe dare problemi.
+# Usiamo il nome corretto (senza estensione .py).
 
-import importazioni_e_main
+import m02_moduli_teoria as teoria
 
-print("\n(Se hai notato, non è apparso nessun messaggio di test dal file importato.")
-print("Questo è il miracolo dell' 'if __name__ == \"__main__\":' che abbiamo usato di là!)")
+print("
+(Se hai notato, non è apparso nessun messaggio di test dal file importato.")
+print("Questo è il miracolo dell' 'if __name__ == "__main__":' che abbiamo usato di là!)")
 
 # ============================================================
 # PARTE 2: USARE GLI STRUMENTI IMPORTATI
 # ============================================================
-print("\n=== 2. USIAMO LE FUNZIONI ===")
-# Per usare una funzione dell'altro file, scriviamo: nome_file.nome_funzione()
+print("
+=== 2. USIAMO LE FUNZIONI ===")
+# Per usare una funzione dell'altro file, scriviamo: alias.nome_funzione()
 
 print("Sto giocando a Monopoli e mi serve un dado...")
 # Chiamo la funzione lancia_dado() che vive nell'altro file!
-mio_dado = importazioni_e_main.lancia_dado()
+mio_dado = teoria.lancia_dado()
 print(f"Ho tirato il dado ed è uscito: {mio_dado}")
 
-print("\nOra devo calcolare l'area di una torta di raggio 10...")
+print("
+Ora devo calcolare l'area di una torta di raggio 10...")
 # Chiamo l'altra funzione!
-area_torta = importazioni_e_main.calcola_area_cerchio(10)
+area_torta = teoria.calcola_area_cerchio(10)
 print(f"L'area della mia torta è: {area_torta}")
 
 
@@ -43,13 +47,13 @@ print(f"L'area della mia torta è: {area_torta}")
 # ============================================================
 
 # === ERRORI COMUNI ===
-# Errore 1: Dimenticare il nome del file prima della funzione
-# SBAGLIATO: lancia_dado() -> Python cercherà questa funzione IN QUESTO file e darà errore.
-# GIUSTO: importazioni_e_main.lancia_dado() -> Diciamo a Python esattamente DOVE andare a prenderla.
+# Errore 1: Dimenticare l'alias o il nome del file
+# SBAGLIATO: lancia_dado() -> Python non sa dove sia.
+# GIUSTO: teoria.lancia_dado() -> Usiamo l'alias 'teoria' che abbiamo dato nell'import.
 
 # Errore 2: Cercare di importare il file con il ".py" alla fine
-# SBAGLIATO: import importazioni_e_main.py
-# GIUSTO: import importazioni_e_main (Python sa già che è un file .py!)
+# SBAGLIATO: import file.py
+# GIUSTO: import file (Python sa già che è un file .py!)
 
 # ============================================================
 # RIASSUNTO FINALE
