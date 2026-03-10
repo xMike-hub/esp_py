@@ -1,68 +1,105 @@
-# Appunti sulle stringhe in Python per principianti
-# Le stringhe sono sequenze di caratteri (lettere, numeri, simboli) racchiuse tra virgolette.
-# Puoi usare " " oppure ' ' indifferentemente.
+# Appunti sulle STRINGHE in Python per principianti
+# Le stringhe (str) sono sequenze di caratteri (lettere, numeri, spazi, simboli).
+# Si creano racchiudendo il testo tra virgolette doppie (" ") o singole (' ').
 
-# Esempi di stringhe:
+# ============================================================
+# PARTE 1: CREAZIONE E CONCATENAZIONE (Unire i testi)
+# ============================================================
+
+print("=== 1. CREAZIONE E CONCATENAZIONE ===")
 messaggio = "Ciao, Python!"
-nome = 'Mario'
+nome = 'Mario'  # Singole o doppie è indifferente per Python
 frase = "Python è fantastico!"
 
-print("Messaggio:", messaggio)
-print("Nome:", nome)
-print("Frase:", frase)
-
-# Concatenazione (unire stringhe):
+# Concatenazione: usare il + per incollare due o più stringhe
 cognome = "Rossi"
-nome_completo = nome + " " + cognome
+nome_completo = nome + " " + cognome  # Aggiungiamo uno spazio in mezzo!
 print("Nome completo:", nome_completo)
 
-# Lunghezza della stringa (quanti caratteri ha):
+# ============================================================
+# PARTE 2: LUNGHEZZA E INDICI (Come per le liste!)
+# ============================================================
+
+print("\n=== 2. LUNGHEZZA E INDICI ===")
+# len() conta quanti caratteri ci sono (compresi gli spazi e la punteggiatura)
 print("Lunghezza di 'Ciao':", len("Ciao"))
-print("Lunghezza di messaggio:", len(messaggio))
+print("Il messaggio ha", len(messaggio), "caratteri")
 
-# Accedere ai caratteri (posizione inizia da 0):
+
+
+# Accedere ai singoli caratteri usando le parentesi quadre [] (Si parte da 0!)
 testo = "Python"
-print("Primo carattere:", testo[0])   # P
-print("Secondo carattere:", testo[1]) # y
-print("Ultimo carattere:", testo[-1]) # n
+print("La parola è:", testo)
+print("Primo carattere (indice 0):", testo[0])   # P
+print("Secondo carattere (indice 1):", testo[1]) # y
+print("Ultimo carattere (indice -1):", testo[-1])# n
 
-# Metodi utili delle stringhe:
-# Cosa sono i metodi? Sono azioni che puoi fare su un oggetto (in questo caso una stringa).
-# Si usano con il punto: oggetto.metodo()
-# Pensa: la stringa è un oggetto che sa fare cose!
+# ============================================================
+# PARTE 3: I METODI DELLE STRINGHE (Azioni pronte all'uso)
+# ============================================================
+# Si usano scrivendo: nome_variabile.metodo()
 
-testo_minuscolo = messaggio.lower()  # Azione: converti in minuscole - Tutte minuscole
-print("Minuscolo:", testo_minuscolo)
+print("\n=== 3. METODI PRINCIPALI ===")
+# .lower() e .upper() per le maiuscole/minuscole
+print("Tutto minuscolo:", messaggio.lower())
+print("Tutto maiuscolo:", messaggio.upper())
 
-testo_maiuscolo = messaggio.upper()  # Azione: converti in maiuscole - Tutte maiuscole
-print("Maiuscolo:", testo_maiuscolo)
-
-# Trovare una parte dentro la stringa:
-if "Python" in frase:
-    print("La parola Python è nella frase!")
-
-# Sostituire una parte:
+# .replace(vecchio, nuovo) per sostituire parole o lettere
 frase_modificata = frase.replace("fantastico", "meraviglioso")
 print("Frase modificata:", frase_modificata)
 
-# Dividere una stringa:
+# .split(separatore) taglia la stringa e crea una LISTA!
 frase_divisa = "Ciao, come stai?"
-parole = frase_divisa.split(",")
-print("Parole divise:", parole)
+parole = frase_divisa.split(",") # Taglia dove c'è la virgola
+print("Parole divise in una lista:", parole)
 
-# Stringhe con più righe:
+# ============================================================
+# PARTE 4: RICERCA E STRINGHE MULTIRIGA
+# ============================================================
+
+print("\n=== 4. RICERCA E TESTI LUNGHI ===")
+# L'operatore 'in' verifica se una sottostringa esiste
+if "Python" in frase:
+    print("Sì, la parola 'Python' è presente nella frase!")
+
+# Le tre virgolette (""") permettono di andare a capo liberamente
 poesia = """Python è bello
 Facile e divertente
 Perfetto per imparare!"""
 print("Poesia:\n" + poesia)
 
-# Esempi NON corretti (commentati per non dare errori):
-# stringa = "Ciao'  # Errore: virgolette non chiuse
-# print("Testo" 'Testo2')  # Errore: assenza di operatore tra stringhe
-# print(stringa + 10)  # Errore: non puoi sommare stringa e numero
+# ============================================================
+# PROGRAMMINO INTERATTIVO
+# ============================================================
 
-# Per rendere interattivo: chiediamo il nome e creiamo un saluto personalizzato
+print("\n=== SALUTO PERSONALIZZATO ===")
 nome_utente = input("Inserisci il tuo nome: ")
+# Uniamo le stringhe per creare la frase finale
 saluto = "Benvenuto, " + nome_utente + "! Stai imparando Python!"
 print(saluto)
-print("Il tuo nome ha", len(nome_utente), "caratteri.")
+print("Curiosità: Il tuo nome è lungo", len(nome_utente), "caratteri.")
+
+# ============================================================
+# ERRORI COMUNI E COME EVITARLI
+# ============================================================
+
+print("\n=== ERRORI COMUNI ===")
+print("Errore 1: Dimenticare di chiudere le virgolette, o mischiarle")
+print("SBAGLIATO: stringa = \"Ciao'")
+print("GIUSTO: stringa = \"Ciao\" oppure 'Ciao'")
+
+print("\nErrore 2: Sommare stringhe e numeri (TypeError)")
+print("SBAGLIATO: print('Il mio numero è ' + 10)")
+print("GIUSTO: print('Il mio numero è ' + str(10)) -> str() converte il numero in testo")
+print("OPPURE: print('Il mio numero è', 10) -> La virgola nel print gestisce tutto da sola")
+
+# ============================================================
+# RIASSUNTO FINALE
+# ============================================================
+
+print("\n=== RIASSUNTO ===")
+print("1. 'testo' o \"testo\" → Creano la stringa")
+print("2. stringa1 + stringa2 → Le unisce (concatenazione)")
+print("3. len(stringa) → Conta i caratteri")
+print("4. stringa[0] → Prende il primo carattere")
+print("5. Metodi utili: .upper(), .lower(), .replace(), .split()")
