@@ -69,7 +69,7 @@ Materiale didattico ufficiale diviso per unità di apprendimento.
 | 📘 **UNIT 1 - S2** | 🔸 [S2-L1_Fondamenti_Network _Protocolli](./Slide/UNIT-1/S2/S2-L1_Fondamenti_Network%20_Protocolli/)<br>🔸 [S2-L2_Python-1](./Slide/UNIT-1/S2/S2-L2_Python-1/)<br>🔸 [S2-L3_Python-2](./Slide/UNIT-1/S2/S2-L3_Python-2/)<br>🔸 [S3-L4_Python_&_AI](./Slide/UNIT-1/S2/S3-L4_Python_&_AI/)<br>🔸 [S2-L5_Progetto](./Slide/UNIT-1/S2/S2-L5_Progetto/) | [Apri 📁](./Slide/UNIT-1/S2/) |
 | 📘 **UNIT 1 - S3** | 🔸 [S3-L1_Sistemi_Operativi](./Slide/UNIT-1/S3/S3-L1_Sistemi_Operativi/)<br>🔸 [S3-L2_Penetration_Testing_Intro](./Slide/UNIT-1/S3/S3-L2_Penetration_Testing_Intro/)<br>🔸 [S3-L3_Firewall](./Slide/UNIT-1/S3/S3-L3_Firewall/)<br>🔸 [S4-L4_Crittografia](./Slide/UNIT-1/S3/S4-L4_Crittografia/) | [Apri 📁](./Slide/UNIT-1/S3/) |
 | 🛠️ **UNIT 1 - BW1** | 🔸 [Build Week 1: Progetto Compagnia Theta](./Slide/UNIT-1/BW-1/) | [Apri 📁](./Slide/UNIT-1/BW-1/) |
-| 📗 **UNIT 2 - S1** | 🔸 [S5-L1_OSINT](./Slide/UNIT-2/S1/S5-L1_OSINT/)<br>🔸 [S5-L2_Social_Engineering](./Slide/UNIT-2/S1/S5-L2_Social_Engineering/) | [Apri 📁](./Slide/UNIT-2/S1/) |
+| 📗 **UNIT 2 - S1** | 🔸 [S5-L1_OSINT](./Slide/UNIT-2/S1/S5-L1_OSINT/)<br>🔸 [S5-L2_Social_Engineering](./Slide/UNIT-2/S1/S5-L2_Social_Engineering/)<br>&nbsp;&nbsp;&nbsp;&nbsp;↳ 📄 [Social_Engineering.md](./Slide/UNIT-2/S1/S5-L2_Social_Engineering/Social_Engineering.md) | [Apri 📁](./Slide/UNIT-2/S1/) |
 
 ## 🚀 Come Iniziare
 
