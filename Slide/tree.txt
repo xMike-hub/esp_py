@@ -1,0 +1,69 @@
+Elenco del percorso delle cartelle
+Numero di serie del volume: DC9D-92CE
+C:.
+|   tree.txt
+|   
++---UNIT-1
+|   +---BW-1
+|   |       Appunti_BW1.md
+|   |       BW-1.pdf
+|   |       
+|   +---S1
+|   |   +---S1-L1_Introduzione_all_Ethical_Hacking
+|   |   |       Introduzione_all_Ethical_Hacking.pdf
+|   |   |       
+|   |   +---S1-L2_Fondamenti_di_Network_1
+|   |   |       Fondamenti_di_Network.pdf
+|   |   |       
+|   |   +---S1-L3_Fondamenti_di_Network_2
+|   |   |       Fondamenti_di_Network_2.pdf
+|   |   |       
+|   |   +---S1-L4_Fondamenti_di_Network_3
+|   |   |       Fondamenti_di_Network_3.pdf
+|   |   |       
+|   |   \---S1-L5_Progetto
+|   |           S1-Progetto.pdf
+|   |           
+|   +---S2
+|   |   +---S2-L1_Fondamenti_Network _Protocolli
+|   |   |       Fondamenti_Network_Protocolli.pdf
+|   |   |       
+|   |   +---S2-L2_Python-1
+|   |   |       Python-1.pdf
+|   |   |       
+|   |   +---S2-L3_Python-2
+|   |   |       Python-2.pdf
+|   |   |       
+|   |   +---S2-L5_Progetto
+|   |   |       S2-Progetto.pdf
+|   |   |       
+|   |   \---S3-L4_Python_&_AI
+|   |           Python_&_AI.pdf
+|   |           
+|   \---S3
+|       +---S3-L1_Sistemi_Operativi
+|       |       I_Sistemi_Operativi.pdf
+|       |       
+|       +---S3-L2_Penetration_Testing_Intro
+|       |       Penetration_Testing_Intro.pdf
+|       |       
+|       +---S3-L3_Firewall
+|       |       Appunti_Firewall.md
+|       |       Firewall.pdf
+|       |       
+|       \---S4-L4_Crittografia
+|               Appunti_Crittografia.md
+|               Crittografia.pdf
+|               
+\---UNIT-2
+    \---S1
+        +---S5-L1_OSINT
+        |       Appunti_OSINT.md
+        |       Esempio Rules of Engagement (RoE).pdf
+        |       osint.pdf
+        |       Screenshot 2026-03-30 165319.png
+        |       
+        \---S5-L2_Social_Engineering
+                S5-L2.pdf
+                Social_Engineering.md
+                
